@@ -42,9 +42,11 @@ while winner:
         choice = 'r'
         turn_total = 0
         print(players)
+
         while choice != 'h':
             die = Dice()
             face_number = die.roll_dice()
+
             if face_number == 1:
                 print('{} rolled a 1 and lost the turn.'.format(players.name))
                 turn_total = 0
